@@ -26,16 +26,20 @@ function convertPokemonToLi(pokemon) {
 function pokeName(pokemon) {
     const nomepoke = `${pokemon.name}`
     const nomepoke1 = document.getElementById(`${nomepoke}`)
-    return nomepoke1.addEventListener('click', ()=>{console.log(nomepoke)})
+    return nomepoke1.addEventListener('click', ()=>{console.log(pokemon.name)})
 }
+
 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
         pokemonList.innerHTML += newHtml
-        pokemons.map(pokeName)
+    })
+    pokeApi.getPokemons(0, maxRecords).then((pokemons2 = []) => {
+        pokemons2.map(pokeName)
     })
 }
+
 
 loadPokemonItens(offset, limit)
 
