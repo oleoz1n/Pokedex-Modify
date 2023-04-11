@@ -7,7 +7,8 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <li id="${pokemon.name}"class="pokemon ${pokemon.type}">
+    <li id="${pokemon.name}"class="pokemon ${pokemon.type}" onclick="returnPokemon(${pokemon.number-1})"> 
+      
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
@@ -19,24 +20,25 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
+            
         </li>
     `
 }
 
-function pokeName(pokemon) {
-    const nomepoke = `${pokemon.name}`
-    const nomepoke1 = document.getElementById(`${nomepoke}`)
-    return nomepoke1.addEventListener('click', ()=>{console.log(pokemon.name)})
+function convertPokemonToStats(pokemon){
+    console.log(pokemon.stats,pokemon.weight,pokemon.height,pokemon.moves)
 }
 
+function returnPokemon(numero){
+    pokeApi.getPokemons(numero, 1).then((pokemons=[])=>{
+        pokemons.map(convertPokemonToStats)
+    })
+}
 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
         pokemonList.innerHTML += newHtml
-    })
-    pokeApi.getPokemons(0, maxRecords).then((pokemons2 = []) => {
-        pokemons2.map(pokeName)
     })
 }
 
