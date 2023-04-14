@@ -24,15 +24,23 @@
     height: 100vh;
 }
 
+#arrow-left{
+    margin-right: 2rem;
+}
+
+#arrow-right{
+    margin-left: 2rem;
+}
+
 .arrows {
-    display: flex;
-    justify-content: space-between;
+    margin: 0 1rem;
     align-items: center;
+    display: flex;
 }
 
 .Pokeimg {
-    height: 20rem;
     align-self: center;
+    transform: perspective(500px) translate3d(10px, 0, 100px);
 }
 
 .margin2 {
@@ -100,16 +108,19 @@
     }
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (max-width: 380px) {
     
 }
 
-@media screen and (min-width: 576px) {
-    
+@media screen and (max-width: 576px) {
+    .Pokeimg{
+        width: 100%;
+    }
+    #arrow-right{
+        margin-left: 3rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
-    .Pokeimg {
-        height: 12rem;
-    }
+
 }
