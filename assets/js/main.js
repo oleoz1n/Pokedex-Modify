@@ -43,17 +43,18 @@ function convertPokemonToStats(pokemon){
       </div>
       <div class="grid-pokedex">
         <div id="arrow-left" class="arrows">
-          <img id="leftarrow" src="assets/svg/leftarrow.svg" alt="left" onclick="prepokemon(${pokemon.number-2})" />
+          <img id="leftarrow" class="pointer" src="assets/svg/leftarrow.svg" alt="left" onclick="prepokemon(${pokemon.number-2})" />
         </div>
         <img
           class="Pokeimg"
           src="${pokemon.photo}"
           alt="${pokemon.name}"
         />
-        <div id="arrow-right" class="arrows alt="right" onclick="propokemon(${pokemon.number})">
+        <div id="arrow-right" class="arrows" alt="right">
           <img
-            class="arrows"
+            class="arrows pointer"
             id="rightarrow"
+            onclick="propokemon(${pokemon.number})"
             src="assets/svg/rightarrow.svg"
             alt="right"
           />
