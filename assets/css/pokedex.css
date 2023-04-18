@@ -7,74 +7,147 @@
 }
 
 .normal {
-    background-color: #a6a877;
+    background: rgb(166,168,119);
+    background: linear-gradient(90deg, rgba(166,168,119,1) 0%, rgba(52,52,35,1) 100%);
+}
+
+.normal-type {
+    background: rgb(166,168,119)
 }
 
 .grass {
+    background: rgb(119,200,80);
+    background: linear-gradient(90deg, rgba(119,200,80,1) 0%, rgba(58,80,47,1) 100%);
+}
+.grass-type {
     background-color: #77c850;
 }
 
 .fire {
+    background: rgb(238,127,48);
+    background: linear-gradient(90deg, rgba(238,127,48,1) 0%, rgba(55,29,10,1) 100%);
+}
+.fire-type {
     background-color: #ee7f30;
 }
 
 .water {
+    background: rgb(103,143,238);
+    background: linear-gradient(90deg, rgba(103,143,238,1) 0%, rgba(21,27,42,1) 100%);
+}
+.water-type {
     background-color: #678fee;
 }
 
 .electric {
+    background: rgb(247,207,46);
+    background: linear-gradient(90deg, rgba(247,207,46,1) 0%, rgba(47,40,10,1) 100%);
+}
+.electric-type {
     background-color: #f7cf2e;
 }
 
 .ice {
+    background: rgb(152,213,215);
+    background: linear-gradient(90deg, rgba(152,213,215,1) 0%, rgba(27,38,38,1) 100%);
+}
+.ice-type {
     background-color: #98d5d7;
 }
 
 .ground {
+    background: rgb(222,201,144);
+    background: linear-gradient(90deg, rgba(222,201,144,1) 0%, rgba(108,100,76,1) 100%);
+}
+.ground-type {
     background-color: #dfbf69;
 }
 
 .flying {
+    background: rgb(169,143,240);
+    background: linear-gradient(90deg, rgba(169,143,240,1) 0%, rgba(52,46,70,1) 100%);
+}
+.flying-type {
     background-color: #a98ff0;
 }
 
 .poison {
+    background: rgb(160,64,160);
+    background: linear-gradient(90deg, rgba(160,64,160,1) 0%, rgba(46,19,46,1) 100%);
+}
+.poison-type {
     background-color: #a040a0;
 }
 
 .fighting {
+    background: rgb(191,48,41);
+    background: linear-gradient(90deg, rgba(191,48,41,1) 0%, rgba(45,12,11,1) 100%);
+}
+.fighting-type {
     background-color: #bf3029;
 }
 
 .psychic {
+    background: rgb(246,86,135);
+    background: linear-gradient(90deg, rgba(246,86,135,1) 0%, rgba(54,20,30,1) 100%);
+}
+.psychic-type {
     background-color: #f65687;
 }
 
 .dark {
+    background: rgb(114,88,71);
+    background: linear-gradient(90deg, rgba(114,88,71,1) 0%, rgba(61,47,38,1) 100%);
+}
+.dark-type {
     background-color: #725847;
 }
 
 .rock {
+    background: rgb(184,161,55);
+    background: linear-gradient(90deg, rgba(184,161,55,1) 0%, rgba(69,60,22,1) 100%);
+}
+.rock-type {
     background-color: #b8a137;
 }
 
 .bug {
+    background: rgb(168,183,32);
+    background: linear-gradient(90deg, rgba(168,183,32,1) 0%, rgba(62,68,12,1) 100%);
+}
+.bug-type {
     background-color: #a8b720;
 }
 
 .ghost {
+    background: rgb(110,88,150);
+    background: linear-gradient(90deg, rgba(110,88,150,1) 0%, rgba(48,39,65,1) 100%);
+}
+.ghost-type {
     background-color: #6e5896;
 }
 
 .steel {
+    background: rgb(185,183,207);
+    background: linear-gradient(90deg, rgba(185,183,207,1) 0%, rgba(63,63,70,1) 100%);
+}
+.steel-type {
     background-color: #b9b7cf;
 }
 
 .dragon {
+    background: rgb(111,56,246);
+    background: linear-gradient(90deg, rgba(111,56,246,1) 0%, rgba(25,13,54,1) 100%);
+}
+.dragon-type {
     background-color: #6f38f6;
 }
 
 .fairy {
+    background: rgb(249,174,199);
+    background: linear-gradient(90deg, rgba(249,174,199,1) 0%, rgba(48,35,40,1) 100%);
+}
+.fairy-type {
     background-color: #f9aec7;
 }
 

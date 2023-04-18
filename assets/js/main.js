@@ -10,14 +10,14 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-    <li id="${pokemon.name}"class="pokemon ${pokemon.type}" class="pointer" onclick="returnPokemon(${pokemon.number-1})"> 
+    <li id="${pokemon.name}"class="pokemon ${pokemon.type} pointer"  onclick="returnPokemon(${pokemon.number-1})"> 
       
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
             <div class="detail">
                 <ol class="types">
-                    ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                    ${pokemon.types.map((type) => `<li class="type ${type}-type">${type}</li>`).join('')}
                 </ol>
 
                 <img src="${pokemon.photo}"
@@ -38,7 +38,7 @@ function convertPokemonToStats(pokemon){
           <span class="name font-white">${pokemon.name}</span><span class="font-white">#${pokemon.number}</span>
         </div>
         <ol class="typesA">
-        ${pokemon.types.map((type) => `<li class="typeA ${type}">${type}</li>`).join('')}
+        ${pokemon.types.map((type) => `<li class="typeA ${type}-type">${type}</li>`).join('')}
         </ol>
       </div>
       <div class="grid-pokedex">
