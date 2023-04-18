@@ -1,0 +1,13 @@
+.progress-bar{
+    height: 5px;
+    width: 70%;
+    border-radius: 1rem;
+    background-color: #ccc;
+  }
+
+  .progress-bar div {
+    height: 100%;
+    --widthA: 20;
+    background-color: hsl( calc(var(--widthA) * 1.2) , 80%, 50%);
+    max-width: 100%;
+  }

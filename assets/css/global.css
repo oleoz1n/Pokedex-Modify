@@ -19,6 +19,35 @@ body {
     justify-content: space-between;
 }
 
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.gap-5 {
+    gap: 10px;
+}
+
+.font-white {
+    color: #fff;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.block {
+    display: block;
+}
+
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;

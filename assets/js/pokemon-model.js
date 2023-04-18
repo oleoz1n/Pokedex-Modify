@@ -5,8 +5,16 @@ class Pokemon {
     type;
     types = [];
     photo;
-    stats;
     weight;
     height;
-    moves;
+    abilities;
+    ability;
+    hp;
+    attack;
+    defense;
+    apatk;
+    spdef;
+    speed;
+    xp;
+    total;
 }

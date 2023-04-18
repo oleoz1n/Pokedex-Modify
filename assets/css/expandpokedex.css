@@ -1,6 +1,5 @@
 .pokemonData {
     margin: 0;
-    height: 100vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -14,33 +13,28 @@
     flex-direction: column;
 }
 
-.about {
+.infos-display {
     background-color: white;
-    border-radius: 5rem 5rem 0 0;
-}
-
-.content2 {
-    width: 100vw;
-    height: 100vh;
-}
-
-#arrow-left{
-    margin-right: 2rem;
-}
-
-#arrow-right{
-    margin-left: 2rem;
+    border-radius: 2rem 2rem 0 0;
+    padding: 1rem;
 }
 
 .arrows {
-    margin: 0 1rem;
     align-items: center;
     display: flex;
 }
 
+#arrow-left {
+    margin-right: 1rem;
+}
+#arrow-right {
+    margin-left: 1rem;
+}
+
 .Pokeimg {
-    align-self: center;
-    transform: perspective(500px) translate3d(10px, 0, 100px);
+    transform: translate3d(0px, 25px, 0px);
+    height: 100%;
+    justify-self: center;
 }
 
 .margin2 {
@@ -48,31 +42,25 @@
 }
 
 .margin-height {
-    margin: 1rem 0;
+    margin: 0.2rem 0;
 }
 
 #back {
     height: 3rem;
-    width: 3rem;
 }
 
 #rightarrow {
     height: 3rem;
-    width: 3rem;
-    margin: auto auto;
 }
 
 #leftarrow {
     height: 3rem;
-    width: 3rem;
-    margin: auto auto;
 }
 
 .grid-pokedex {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    justify-items: center;
-    bottom: 0;
+    width: 100%;
 }
 
 .padading2 {
@@ -96,15 +84,103 @@
     text-align: center;
 }
 
+.infos-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.infos-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.espaco {
+    height: 1.15em;
+    margin: 1em 0;
+}
+
+.especificacoes {
+    color: rgb(92, 92, 92);
+}
+
+.olmod {
+    margin: 0;
+    padding: 0;
+}
+
+.olmod li {
+        height: 1.15em;
+        margin: 1em 0;
+        list-style: none;
+}
+
+.informations {
+    width: 100%;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.37);
+    padding: 2rem 0 0rem;
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    z-index: 10;
+}
+
+.informations #click-about {
+    transition: .2s;
+}
+
+.informations #click-stats {
+    transition: .2s;
+}
+
+.informations #click-about:hover {
+    cursor: pointer;
+    transform: scale(1.09, 1.07);
+    transition: .2s;
+}
+
+.informations #click-stats:hover {
+    cursor: pointer;
+    transform: scale(1.09, 1.07);
+    transition: .2s;
+}
+.informations .select {
+    color: rgba(0, 0, 0, 0.944);
+}
+
+.informations .select::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(4, 85, 51);
+    display: block;
+    margin: 1rem auto;
+}
+
+.informations::after {
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: rgba(4, 85, 51, 0.153);
+    display: block;
+    position: absolute;
+    margin: 2.150rem auto;
+}
+
 @media screen and (min-width: 992px) {
     .content2 {
         max-width: 992px;
-        height: auto;
         margin: 1rem auto;
     }
 
     .pokemonData{
         border-radius: 1rem;
+    }
+
+    .informations::after {
+        width: 50%;
     }
 }
 
@@ -116,11 +192,23 @@
     .Pokeimg{
         width: 100%;
     }
-    #arrow-right{
-        margin-left: 3rem;
+    #back {
+        height: 2rem;
+    }
+    
+    #rightarrow {
+        height: 2rem;
+    }
+    
+    #leftarrow {
+        height: 2rem;
     }
 }
 
 @media screen and (max-width: 992px) {
+    .infos-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
 }

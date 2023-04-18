@@ -13,11 +13,23 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.type = type
 
     pokemon.photo = pokeDetail.sprites.other['official-artwork'].front_default
-    pokemon.stats = pokeDetail.stats.map((statsSlot)=> statsSlot.base_stat)
     pokemon.weight = pokeDetail.weight
     pokemon.height = pokeDetail.height
-    pokemon.moves = pokeDetail.moves.map((moveSlot)=> moveSlot.move.name)
-
+    const abilities = pokeDetail.abilities.map((abilitiesSlot)=> abilitiesSlot.ability.name)
+    const ability = abilities[abilities.length - 1]
+    pokemon.ability = ability
+    pokemon.abilities = abilities
+    pokemon.xp = pokeDetail.base_experience
+    
+    const stats = pokeDetail.stats.map((statsSlot)=> statsSlot.base_stat)
+    pokemon.hp = stats[0]
+    pokemon.attack = stats[1]
+    pokemon.defense = stats[2]
+    pokemon.spatk = stats[3]
+    pokemon.spdef = stats[4]
+    pokemon.speed = stats[5]
+    pokemon.total = stats[0] + stats[1] + stats[2] + stats[3] + stats[4] + stats[5]
+    
     return pokemon
 }
 
