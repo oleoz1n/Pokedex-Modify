@@ -50,6 +50,12 @@ body {
   cursor: pointer;   
 }
 
+.num-linha {
+    width: 2rem;
+    text-align: end;
+    text-align: flex-end;
+}
+
 @media screen and (min-width: 992px) {
     .content {
         max-width: 992px;

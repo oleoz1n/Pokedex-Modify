@@ -106,13 +106,13 @@ function convertPokemonToStats(pokemon){
     </div>
     <div class="dados">
       <ol class="olmod">
-      <div class="align-center gap-5 espaco"><li><span>${pokemon.hp}</span></li><div class="progress-bar" > <div style="width: ${pokemon.hp}%;--widthA:${pokemon.hp};"></div>  </div></div>
-      <div class="align-center gap-5 espaco"><li><span>${pokemon.attack}</span></li><div class="progress-bar" > <div style="width: ${pokemon.attack}%;--widthA:${pokemon.attack};"></div> </div></div>
-      <div class="align-center gap-5 espaco"><li><span>${pokemon.defense}</span></li><div class="progress-bar" > <div style="width: ${pokemon.defense}%;--widthA:${pokemon.defense};"></div> </div></div>
-      <div class="align-center gap-5 espaco"><li><span>${pokemon.spatk}</span></li><div class="progress-bar" > <div style="width: ${pokemon.spatk}%;--widthA:${pokemon.spatk};"></div> </div></div>
-      <div class="align-center gap-5 espaco"><li><span>${pokemon.spdef}</span></li><div class="progress-bar" > <div style="width: ${pokemon.spdef}%;--widthA:${pokemon.spdef};"></div> </div></div>
-      <div class="align-center gap-5 espaco"><li><span>${pokemon.speed}</span></li><div class="progress-bar" > <div style="width: ${pokemon.speed}%;--widthA:${pokemon.speed};"></div> </div></div>
-      <div class="align-center gap-5 espaco"><li><span>${pokemon.total}</span></li><div class="progress-bar" > <div style="width: ${pokemon.total/6}%;--widthA:${pokemon.total/6};"></div> </div></div>
+      <div class="align-center gap-5 espaco"><li class="num-linha"><span>${pokemon.hp}</span></li><div class="progress-bar" > <div style="width: ${pokemon.hp}%;--widthA:${pokemon.hp};"></div>  </div></div>
+      <div class="align-center gap-5 espaco"><li class="num-linha"><span>${pokemon.attack}</span></li><div class="progress-bar" > <div style="width: ${pokemon.attack}%;--widthA:${pokemon.attack};"></div> </div></div>
+      <div class="align-center gap-5 espaco"><li class="num-linha"><span>${pokemon.defense}</span></li><div class="progress-bar" > <div style="width: ${pokemon.defense}%;--widthA:${pokemon.defense};"></div> </div></div>
+      <div class="align-center gap-5 espaco"><li class="num-linha"><span>${pokemon.spatk}</span></li><div class="progress-bar" > <div style="width: ${pokemon.spatk}%;--widthA:${pokemon.spatk};"></div> </div></div>
+      <div class="align-center gap-5 espaco"><li class="num-linha"><span>${pokemon.spdef}</span></li><div class="progress-bar" > <div style="width: ${pokemon.spdef}%;--widthA:${pokemon.spdef};"></div> </div></div>
+      <div class="align-center gap-5 espaco"><li class="num-linha"><span>${pokemon.speed}</span></li><div class="progress-bar" > <div style="width: ${pokemon.speed}%;--widthA:${pokemon.speed};"></div> </div></div>
+      <div class="align-center gap-5 espaco"><li class="num-linha"><span>${pokemon.total}</span></li><div class="progress-bar" > <div style="width: ${pokemon.total/6}%;--widthA:${pokemon.total/6};"></div> </div></div>
     </ol>
     </div>  
   </div>
