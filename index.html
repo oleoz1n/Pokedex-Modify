@@ -28,14 +28,23 @@
     <link rel="stylesheet" href="assets/css/pokedex.css" />
     <link rel="stylesheet" href="assets/css/expandpokedex.css" />
     <link rel="stylesheet" href="assets/css/progress-bar.css">
+    <link rel="stylesheet" href="assets/css/color-mode.css">
   </head>
 
   <body>
+    <div id="current-mode">
+
     <section id="expandpokemon" class="content2">
       <!-- ..... Pokemons here ..... -->
     </section>
     <section id="content" class="content">
-      <h1>Pokedex</h1>
+      <div class="flex-between align-center pokedexh1theme">
+      <h1>Poke<span style="color:red;">dex</span></h1>
+        <div class="toggle">
+          <input type="checkbox" id="toggle" onclick="check()"/>
+          <label for="toggle"></label>
+      </div>
+  </div>
 
       <ol id="pokemonList" class="pokemons">
         <!-- ..... Pokemons here ..... -->
@@ -44,11 +53,13 @@
       <div class="pagination">
         <button id="loadMoreButton" type="button">Load More</button>
       </div>
+    </div>
     </section>
 
     <!-- Nosso JS -->
     <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/poke-api.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/color-mode.js"></script>
   </body>
 </html>

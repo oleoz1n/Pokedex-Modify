@@ -1,0 +1,71 @@
+.toggle input[type='checkbox'] {
+    display: none;
+}
+
+.toggle label {
+    background-color: #777;
+    border: 2px solid #555;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    width: 50px;
+    height: 25px;
+}
+
+.toggle label::after {
+    background-color: #555;
+    border-radius: 50%;
+    content: ' ';
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    left: 1px;
+    top: 0px;
+    transition: all ease-in-out 0.3s;
+    width: 21px;
+    height: 21px;
+}
+
+.toggle input[type='checkbox']:checked ~ label {
+    background-color: #00a0fc;
+    border-color: #006dc9;
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+    background-color: #0054b0;
+    transform: translateX(25px);
+}
+
+.dark-mode .content {
+    background-color: #3a3a3a;
+}
+
+.dark-mode .pokedexh1theme {
+    color:white;
+}
+
+.dark-mode .infos-display{
+    background-color: #3a3a3a;
+}
+
+.dark-mode .especificacoes {
+    color: rgb(223, 223, 223);
+}
+
+.dark-mode .informations {
+    color: rgba(255, 255, 255, 0.322)
+}
+
+.dark-mode .informations .select {
+    color: rgba(255, 255, 255, 0.944);
+}
+
+.dark-mode .dados {
+    color: #FFFFFF;
+}
+
+svg {
+    fill:white;
+}
