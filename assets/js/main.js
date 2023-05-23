@@ -33,7 +33,7 @@ function convertPokemonToStats(pokemon){
     <div id="pokemonExpand" class="pokemonData ${pokemon.type}">
     <div class="header">
       <div class="margin2">
-        <img id="back" src="assets/svg/backarrow.svg" onclick="back()" alt="back" />
+        <img id="back" class="pointer" src="assets/svg/backarrow.svg" onclick="back()" alt="back" />
         <div class="space-between margin-height pokemon-nome">
           <span class="name font-white">${pokemon.name}</span><span class="font-white">#${pokemon.number}</span>
         </div>
